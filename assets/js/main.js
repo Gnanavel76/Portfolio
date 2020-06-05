@@ -11,7 +11,7 @@
         function whenScroll(){
                 $('.navlink a').each(function(){
                         let scroll = $(window).scrollTop();
-                        if(scroll >= $($(this).attr('href')).offset().top - 300 || $($(this).attr('href')).offset().top - 300 >= $(window).pageYOffset){
+                        if(scroll >= $($(this).attr('href')).offset().top){
                                 $('.navlink a').removeClass('active');
                                 $('.navlink span').removeClass('active');
                                 $(this).addClass('active');
