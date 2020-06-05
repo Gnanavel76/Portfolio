@@ -1,5 +1,5 @@
  $(document).ready(function(){
-        $('header').css('height',$(window).innerHeight()+'px')
+        $('#home').css('height',$(window).innerHeight()+'px')
         $(window).on('load',function(){
                 $('#preloader').fadeOut(1000);
         });
