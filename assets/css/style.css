@@ -7,6 +7,7 @@ font-family: 'Poppins', sans-serif; */
 }
 html{
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 :focus{
     outline: none;
@@ -55,9 +56,10 @@ header{
 .toggle_icon .line3{
     width: 30px;
     height: 4px;
-    background-color: #000;
+    background-color: #EC248D;
     margin: 5px 0px;
     transition: 0.5s;
+    border-radius: 3px;
 }
 .toggle_icon1 .line1{
     transform: rotate(-45deg) translate(-6px,7px);
@@ -157,7 +159,7 @@ nav{
 #home .container svg .round{
     stroke-dasharray: 534;
     stroke-dashoffset: 534;
-    animation: fill 5s linear 2s;
+    animation: fill 5s linear 4s;
 }
 #home .container .img{
     width: 170px;
@@ -302,7 +304,7 @@ nav{
 }
 /* Contact Form */
 #contact{
-    background-image: linear-gradient(transparent, rgb(0,0,0,0.2)),url('../images/bg2.jpg');
+    background-image: url('../images/bg2.jpg');
     background-size: 120% 140%;
     background-position: 80% 10%;
 }
