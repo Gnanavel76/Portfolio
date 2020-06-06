@@ -1,4 +1,5 @@
  $(document).ready(function(){
+        $('#home').css('height',$(window).innerHeight()+'px')
         $(window).on('load',function(){
                 $('#preloader').fadeOut(1000);
         });
