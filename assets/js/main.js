@@ -1,5 +1,4 @@
  $(document).ready(function(){
-        $('#home').css('height',$(window).innerHeight()+'px')
         $(window).on('load',function(){
                 $('#preloader').fadeOut(1000);
         });
@@ -26,7 +25,7 @@
      function skillAnim(){
         // Adding animation to Skills section
         let scroll = $(window).scrollTop();
-        if(scroll >= $('#skills').offset().top - 300){
+        if(scroll >= $('#skills').offset().top - 100){
                 let selector = document.querySelectorAll('#skills .container .skillBx .imgBx');
                 selector.forEach((link) => {
                         link.style.animation = 'swim 10s ease-in-out forwards,slide 400s linear infinite 9.7s forwards';
