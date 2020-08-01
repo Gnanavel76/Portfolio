@@ -22,6 +22,11 @@ html,body{
 ::-webkit-scrollbar-track {
     background: #ffffff;
 }
+.error{
+    color: #dc3545;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 24px;
+}
 #preloader{
     width: 100%;
     height: 100%;
@@ -299,16 +304,16 @@ nav{
     background-position: 80% 10%;
 }
 #contact-form{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 0px;
 }
 #contact-form input,
 #contact-form textarea{
     display: block;
     width: 100%;
     padding: 10px 15px;
-    margin: 20px;
+    margin: 20px 20px 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.5px;
@@ -323,7 +328,7 @@ nav{
 }
 #contact-form input[type='submit']{
     width: 150px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #001D26;
     border: none;
     border-radius: 34px;

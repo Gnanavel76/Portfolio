@@ -92,4 +92,21 @@
         }
 })
 
+        // Valdidating form
+        $('#name_error').hide();
+        $('#email_error').hide();
+        $('#message_error').hide();
+        $('#contact-form').submit(function(e){
+                let name = validateName($('#name').val(),$('#name_error'),3,10,'name');
+                let email = validateEmail($('#email').val(),$('#email_error'));
+                let message = validateName($('#message').val(),$('#message_error'),15,250,'message');
+                e.preventDefault();
+                console.log(name);
+                console.log(email);
+                console.log(message);
+                // if(name == false || email == false || message == false){
+                //         e.preventDefault();
+                // }
+        });
+
 });
